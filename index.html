@@ -621,10 +621,49 @@
             <div class="budget-row"><span>Fam trips for qualifying travel agents</span><span>Ready for costing</span></div>
             <div class="budget-row"><span>Malaysia Tourist Expert game mechanics and rewards</span><span>Ready for costing</span></div>
           </div>
-          <p class="budget-note">
-            The attached deck includes a cost breakup section. This web version keeps the activity
-            structure visible while leaving commercials open for final alignment.
-          </p>
+          <div class="budget-estimator glass">
+            <div class="budget-estimator-top">
+              <div>
+                <p class="mini-label">Campaign Estimator</p>
+                <h4>Choose a campaign duration to see projected cost and impact.</h4>
+              </div>
+              <label class="budget-select-wrap" for="monthSelect">
+                <span>Campaign Duration</span>
+                <select id="monthSelect" class="budget-select" aria-label="Campaign duration in months">
+                  <option value="1">1 Month</option>
+                  <option value="2">2 Months</option>
+                  <option value="3" selected>3 Months</option>
+                </select>
+              </label>
+            </div>
+
+            <div class="budget-summary">
+              <div class="budget-highlight">
+                <span class="budget-highlight-label">Estimated Cost</span>
+                <strong id="estimatedCost">INR 49,65,000</strong>
+                <p id="costBreakdown">Month 1 at INR 15,00,000, with a 10% scale-up in each additional month.</p>
+              </div>
+              <div class="budget-recommendation">
+                <span class="recommendation-badge">Recommended</span>
+                <p id="estimatorNote">A 3-month run gives the campaign stronger repetition, better learning, and higher conversion potential.</p>
+              </div>
+            </div>
+
+            <div class="impact-grid">
+              <article class="impact-card">
+                <span class="impact-label">Estimated Bookings</span>
+                <strong id="estimatedBookings">6,620</strong>
+              </article>
+              <article class="impact-card">
+                <span class="impact-label">Agent Reach</span>
+                <strong id="estimatedAgents">66,200</strong>
+              </article>
+              <article class="impact-card">
+                <span class="impact-label">B2C Reach</span>
+                <strong id="estimatedB2C">6,62,000</strong>
+              </article>
+            </div>
+          </div>
         </section>
 
         <section class="section contact-section reveal" id="contact">
